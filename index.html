@@ -40,6 +40,7 @@
 		text-align: center;
 		padding-top: 70px;
 		border-radius: 15px; 
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 	}
 	
 	
@@ -193,6 +194,7 @@
 		border: 2px solid #7b5e57;
 		border-radius: 12px;
 		overflow: hidden;  
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 	}
 	
 	table th, table td {
@@ -231,7 +233,37 @@
 		margin-bottom: 10px;
 	}
 	
-		
+	.book-box {
+		background: #f2e5dc;
+		padding: 20px;
+		border-radius: 8px:
+		width: 750px;
+		margin: 0 auto;
+		text-align: center;
+		border-radius: 15px;
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+	}
+	
+	.book-box a {
+		display: inline-block;
+		margin: 8px;
+	}
+	
+	.cover {
+		width: 150px;
+		height: 220px;
+		border-radius: 15px;
+		background: white;
+		box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+		padding: 5px;
+	}
+	
+	.covers-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-items: center;
+	}
+	
 	footer {
 		background-color: #7b5e57;
 		color: #fff;
@@ -291,21 +323,7 @@
 		<p>Here are some of my favorite books this year - you can click to buy or learn more</p>
 		
 		<ol class="book-list">
-			<li>
-			<b>Sunburn</b> by Chloe Michelle Howarth<br><br><br>
 			
-				 
-			<a href="https://www.easons.com/sunburn-chloe-michelle-howarth-9780857308412?srsltid=AfmBOooF23FIHB53z0CMYQPU8oV9PlcG7G7DKFpjLIyHXy_0xF7RVng3" target="_blank">
-			<img src="images/sunburn-small.png" alt="Sunburn">
-			</a>
-			<p>Sunburn is an astute and tender portrayal of first love, adolescent anxiety and the realities of growing up in a small town where tradition holds people tightly in its grasp.
-			An atmospheric sapphic love story and coming-of-age novel with the intensity of Megan Nolan's Acts of Desperation, the long hot summer of André Aciman's Call Me By Your Name and the female friendships of Anna Hope's Expectation.</p>
-			<p><q><em>You seen to think I have all the power here, like I was going to decide not to want you anymore. I am powerless. If you want me, I am yours.</em></q></p>
-			
-				<div class="stars">
-				 ★★★★★
-				 </div>
-			</li>
 		
 			<li>
 			<b>White Nights</b> by Fyodor Dostoevsky<br><br><br>
@@ -334,7 +352,22 @@
 				 ★★★★★
 				 </div>
 			</li>
-		
+			
+			<li>
+			<b>Sunburn</b> by Chloe Michelle Howarth<br><br><br>
+			
+				 
+			<a href="https://www.easons.com/sunburn-chloe-michelle-howarth-9780857308412?srsltid=AfmBOooF23FIHB53z0CMYQPU8oV9PlcG7G7DKFpjLIyHXy_0xF7RVng3" target="_blank">
+			<img src="images/sunburn-small.png" alt="Sunburn">
+			</a>
+			<p>Sunburn is an astute and tender portrayal of first love, adolescent anxiety and the realities of growing up in a small town where tradition holds people tightly in its grasp.
+			An atmospheric sapphic love story and coming-of-age novel with the intensity of Megan Nolan's Acts of Desperation, the long hot summer of André Aciman's Call Me By Your Name and the female friendships of Anna Hope's Expectation.</p>
+			<p><q><em>You seen to think I have all the power here, like I was going to decide not to want you anymore. I am powerless. If you want me, I am yours.</em></q></p>
+			
+				<div class="stars">
+				 ★★★★★
+				 </div>
+			</li>
 	
 			<li>
 			<b>Normal People</b> by Sally Rooney<br><br><br>
@@ -406,6 +439,45 @@
 			
 		</ol>
 		
+	<div class="book-box">
+		<h2 class="box-title">The best book covers</h2>
+		<p>The best book covers I've seen in the past few years are the ones that immediately caught my eye and matched the feeling of the stories I read.</p>
+		
+		<div class="covers-grid">
+			<a href="images/pride_big.jpg" alt="Pride and Prejudice" target="_blank">
+			<img src="images/pride_small.png">
+			</a>
+		
+			<a href="images/divine_big.jpg" alt="The Divine Comedy" target="_blank">
+			<img src="images/divine_small.png">
+			</a>
+		
+			<a href="images/meta_big.jpg" alt="Metarmophosis" target="_blank">
+			<img src="images/meta_small.png">
+			</a>
+		
+			<a href="images/inferno_big.jpg" alt="Inferno" target="_blank">
+			<img src="images/Inferno_small.png">
+			</a>
+		
+			<a href="images/it_big.jpg" alt="IT" target="_blank">
+			<img src="images/it_small.png">
+			</a>
+		
+			<a href="images/queen_big.jpg" alt="The Queen of Nothing" target="_blank">
+			<img src="images/queen_small.png">
+			</a>
+		
+			<a href="images/princess_big.jpg" alt="Clockwork Princess" target="_blank">
+			<img src="images/princess_small.png">
+			</a>
+		
+			<a href="images/thief_big.jpg" alt="The Book Thief" target="_blank">
+			<img src="images/thief_small.png">
+			</a>
+		</div>
+	</div>
+	
 		<h2 class="text-gradient">My Café Adventures</h2>
 		<p>Here's a little summary of the cafés I've visited this year while reading my favorite books.</p>
 	
