@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafés & Reading Music — Coffee & Books</title>
+  <style>
+	
+	
+	* {
+    box-sizing: border-box; 
+		}
+	body {
+		background:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+		font-family: "Georgia", serif;
+		color: #4b3b2b;
+		margin: 0;
+		padding: 0;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		}
+		
+	header {
+		background-color: #7b5e57;
+		color: #fff;
+		height: 300px;
+		text-align: center;
+		padding-top: 70px;
+		border-radius: 15px; 
+	}
+	
+	nav a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 15px;
+		font-weight: bold;
+		font-size: 19px;
+		padding: 8px 12px;
+		border-radius: 8px;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		}
+	
+	nav a:hover{
+		background-color: #f2e5dc;
+		color: #4b3b2b;
+		text-decoration: underline;
+		}
+		
+	hr {
+		border: 0;
+		height: 3px;
+		background: linear-gradient(to right, #7b5e57, #f2e5dc, #7b5e57);
+		width: 100%;
+		margin: 40px auto;
+		border-radius: 5px;
+	}
+	
+	h1 {
+		color: #fff;
+		text-align: center;
+		font-size: 65px;
+	}	
+	p {
+		text-align: center;
+	}
+	section {
+		padding: 20px;
+		max-width: 900px;
+		margin: auto;
+	}
+	
+	h2 {
+		color: #7b5e57;
+		text-align: center;
+	}
+	
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-center: center;
+		gap: 20px;
+		margin-top: 20px;
+	}
+	
+	.cafe-card {
+		background-color: #f2e5dc;
+		border: 2px solid #7b5e57;
+		border-radius: 12px;
+		overflow: hidden;
+		width: 280px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease;
+	
+	}
+	
+	.cafe-card img {
+		width: 100%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		border-bottom: 2px solid #7b5e57;
+		border-radius: 12px 12px 0 0;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	
+	}
+	
+	.cafe-card figcaption {
+		padding: 15px;
+		font-size: 0.9em;
+		color: #4b3b2b;
+		line-height: 1.4;
+	}
+	
+	.gallery img {
+		width: 100%;
+		max-width: 480px; 
+		height: auto;
+		object-fit: cover; 
+		border: 3px solid #7b5e57;
+		border-radius: 12px;
+		box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	.gallery img:hover {
+		transform: scale(1.07);
+		box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+	}
+	
+		
+	footer {
+		background-color: #7b5e57;
+		color: #fff;
+		padding: 20px 0;
+		text-align: center;
+		font-style: italic;
+		letter-spacing: 0.5px;
+		width: 100%;
+		box-sizing: border-box;
+		}
+		
+	footer p {
+		margin: 0;
+	}
+	
+	footer hr {
+		border: 0;
+		height: 3px;
+		background: linear-gradient(to right, #7b5e57, #f2e5dc, #7b5e57);
+		width: 80%;
+		margin: 40px auto;
+		border-radius: 5px;
+	}
+	
+		
+	
+	figure {
+		text-align: center;
+	}
+	
+	figcaption {
+		font-size: 1.0em;
+		color: #7b5e57;
+		margin-top: 5px;
+	}
+	
+table {
+		width: 85%;
+		margin: 30px auto;
+		border-collapse: separete;
+		border-spacing: 0;
+		background: #fff;
+		font-family: Georgia, serif;
+		color: #4b3b2b;
+		border: 2px solid #7b5e57;
+		border-radius: 12px;
+		overflow: hidden;  
+	}
+	
+	table th, table td {
+		border: 1px solid #7b5e57;
+		padding: 10px 15px;
+	}
+	
+	table a:hover {
+		background-color: #f2e5dc;
+		color: #4b3b2b;
+		text-decoration: underline;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+	
+	tr:hover {
+		background-color: #e9d5c7;
+	}
+		
+	th, td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+	}
+	th {
+		background-color: #e9d5c7;
+		color: #4b3b2b
+	}
+	
+	
+		
+	caption {
+		caption-side: top;
+		font-weight: bold;
+		font-size: 1.1em;
+		color: #7b5e57;
+		margin-bottom: 10px;
+	}
+	
+  </style>
+  
+  </head>
+  <body>
+	<header>
+		<h1>Cafés & Reading Music</h1>
+				
+	<nav>
+			<a href="index.html">Home</a>
+			
+			<a href="#top">Coffee</a>
+	</nav>
+		
+	</header>
+	
+		
+		
+	
+	
+	<section>
+		
+		<h2>My favorite Cafés</h2>
+		<p>Here are some of my favorites spots to read while enjoying a cup of coffee:</p>
+		
+	<hr>
+		
+		<div class="gallery">
+			<figure>
+				<a href="https://www.instagram.com/chilldbeans/"target="_blank">
+				<img src="images/chill.PNG" alt="Chill The Beans"> 
+				</a>
+				<figcaption>
+				<b>Chill The Beans</b> This one's special because it's right here in my city! I went there by myself, just me and my book, and it was the perfect little escape. The vibe is so cozy and different, and the coffe was fantastic. It's definitly my new go-to spot for quiet reading afternoons.</figcaption>
+			</figure>
+			
+			<figure>
+				<a href="https://lab82.ie/" target="_blank" rel="noopener noreferrer">
+				<img src="images/lab.PNG" alt="Lab 82 Coffee">
+				</a>
+				<figcaption>
+				<b>Lab 82 Coffee</b> I went there with a friend and we absolutely loved it! The place has such a unique vibe, creative decor, great music, and a really warm atmosphere. The coffee was amazig and the whole experience felt special. Can'n wait to go back!
+				</figcaption>
+			</figure>
+			
+			<figure>
+				<a href="https://saltandsagecafe.com/" target="_blank">
+				<img src="images/charleville.PNG" alt="Salt & Sage">
+				</a>
+				<figcaption>
+				<b>Salt & Sage</b> The experience was excellent! The place is very cozy, with charming decor and just the right background music. The coffee is high quality and the desserts are amazing, and I absolutely loved sitting there with my book. It's the kind of place that makes you want to stay for hours. The staff was super friendly too.</figcaption>
+			</figure>	
+		</div>
+		
+	<hr>
+	
+		<h2>My Café Adventures</h2>
+		<p>Here's a little summary of the cafés I've visited this year while reading my favorite books.</p>
+	
+	<table>
+		<caption><b>Visited Cafés and Ratings</b></caption>
+		<tr>
+			<th>Café</th>
+			<th>City</th>
+			<th>Vibe</th>
+			<th>Rating</th>
+		</tr>
+		<tr>
+			<td><a href="https://www.instagram.com/threefoolscoffee/" target="_blank">Three Fools Coffee</a></td>
+			<td>Cork</td>
+			<td>Quiet and cozy</td>
+			<td>★★★★★</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.facebook.com/meltchocolateandcoffee/" target="_blank">Melt Chocolate Cafe</a></td>
+			<td>Limerick</td>
+			<td>Charming and warm</td>
+			<td>★★★★★</td>
+		
+		</tr>
+		
+		<tr>
+			<td><a href="https://copperandstraw.ie/" target="_blank">Copper + Straw Speciality Coffee</a></td>
+			<td>Dublin</td>
+			<td>The best Hot Chocolate</td>
+			<td>★★★★★</td>
+		
+		</tr>
+		
+		<tr>
+			<td><a href="https://thestableyard.ie/no-9/" target="_blank">No. 9 Cafe</a></td>
+			<td>Waterford</td>
+			<td>Great coffee and cozy vibes</td>
+			<td>★★★★★</td>
+		
+		</tr>
+	</table>
+		
+		<h2>The best songs</h2>
+		<p>I love reading while listening to music, and the perfect soundtrack adds an extra touch to the reading experience. Here are some songs that marked my year of 2025.</p>
+	
+	<table>
+		<caption><b>Soundtrack</b></caption>
+		
+		<tr>
+			<th>Name</th>
+			<th>Singer</th>
+			<th>Genre</th>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=G6Kspj3OO0s&list=RDG6Kspj3OO0s&start_radio=1" target="_blank">Linger</a></td>
+			<td>The Cranberries</td>
+			<td>Irish Rock Band</td>
+		</tr>
+		
+		<tr>	
+			<td><a href="https://www.youtube.com/watch?v=kVE4aOUX2iM&list=RDkVE4aOUX2iM&start_radio=10" target="_blank">Silver Springs</a></td>
+			<td>Fleetwood Mac</td>
+			<td>Pop Rock-Soft Rock</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=XQKYEs4llzg&list=RDXQKYEs4llzg&start_radio=1" target="_blank">Ta reine</a></td>
+			<td>Angèle</td>
+			<td>French Pop</td>
+		</tr> 
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=QwVjTlTdIDQ&list=RDQwVjTlTdIDQ&start_radio=1" target="_blank">Piano Man</a></td>
+			<td>Billy Joel </td>
+			<td>Pop Rock</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=iX_TFkut1PM&list=RDiX_TFkut1PM&start_radio=1" target="_blank">American Pie</a></td>
+			<td>Don McLean</td>
+			<td>Folk rock</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=v4pi1LxuDHc&start_radio=1" target="_blank">Sleep On The Floor</a></td>
+			<td>The Lumineers</td>
+			<td>Folk rock</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=8UVNT4wvIGY&list=RD8UVNT4wvIGY&start_radio=1" target="_blank">Somebody That I Used To Know</a></td>
+			<td>Gotye</td>
+			<td>Indietronica</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=e2c8NkNY41U&list=RDe2c8NkNY41U&start_radio=1" target="_blank">Fantasmas</a></td>
+			<td>HUMBE</td>
+			<td>Alternative R&B</td>
+		</tr>
+		
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=Ub32DqyTk-c&list=RDUb32DqyTk-c&start_radio=1" target="_blank">Circo</a></td>
+			<td>Venere Vai Venus</td>
+			<td>Brazilian Rock</td>
+		</tr>
+		</table>
+		</section>
+		
+		
+		
+	<footer>
+		<hr>
+		<p>&copy; 2025 Coffee & Books — Designed with ☕ & ❤️</p>
+	</footer>
+  
+</body>
+</html>
